@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天室</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <script src="JavaScripts/jquery.min.js"></script>
+    <script src="JavaScripts/main.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+        html,body {
+            background: #ccc;
+            padding: 20px 0 20px 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .login {
+            text-align: center;
+        }
+        .receiveInput{
+            display: block;
+            width: 100%;
+            position: absolute;
+            min-height: 30px;
+            bottom: 55px;
+        }
+        .chatinput {
+            display: block;
+            width: 100%;
+            position: absolute;
+            min-height: 30px;
+            bottom: 0;
+        }
+        #content {
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="loginBox">
+        <h1>登录</h1>
+        <hr>
+        <div class="login">
+            <lable>用户名：</lable><input type="text" id="name"><br><br>
+            <input type="button" value="登录" id="loginBtn">
+        </div>
+    </div>
+    <div style="display: none;" id="chatBox">
+        <div id="content"></div>
+        <input type="text" placeholder="发送给xxx" class="receiveInput" id="sendToVal"/>
+        <input type="text" placeholder="saying somgthing" class="chatinput" id="chatInput">
+
+        
+    </div>
+    
+</body>
+</html>

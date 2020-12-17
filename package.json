@@ -1,0 +1,19 @@
+{
+  "name": "chat-demo",
+  "version": "1.0.0",
+  "description": "搭建一个简易聊天室",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wwj",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "socket.io": "^3.0.4",
+    "underscore": "^1.12.0"
+  }
+}
